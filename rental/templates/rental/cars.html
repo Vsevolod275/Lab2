@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'rental/styles.css' %}">
+    <title>Автопрокат - Автомобили</title>
+</head>
+<body>
+    <h1>Доступные автомобили</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/cars/">Автомобили</a>
+        <a href="/about/">О нас</a>
+        <a href="/contact/">Контакты</a>
+    </nav>
+    <section>
+        <h2>Наши автомобили</h2>
+        <ul>
+            <li><a href="/car/1/">Toyota Camry</a> - $50 в день</li>
+            <li><a href="/car/2/">Honda Accord</a> - $55 в день</li>
+            <li><a href="/car/3/">BMW 3 Series</a> - $80 в день</li>
+            <li><a href="/car/4/">Mercedes-Benz C-Class</a> - $90 в день</li>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'rental/styles.css' %}">
+    <title>Автопрокат - Детали автомобиля</title>
+</head>
+<body>
+    <h1>Детали автомобиля</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/cars/">Автомобили</a>
+        <a href="/about/">О нас</a>
+        <a href="/contact/">Контакты</a>
+    </nav>
+    <section>
+        <h2>Автомобиль ID: {{ car_id }}</h2>
+        <p>Описание автомобиля: Это отличный автомобиль для комфортной поездки.</p>
+        <p>Цена: $70 в день</p>
+        <button>Забронировать</button>
+    </section>
+</body>
+</html>
